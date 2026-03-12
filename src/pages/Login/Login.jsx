@@ -21,6 +21,8 @@ const Login = () => {
         } else {
             setError("Something Wrong")
         }
+        setUsername("")
+        setPassword("")
 
     }
     return (
