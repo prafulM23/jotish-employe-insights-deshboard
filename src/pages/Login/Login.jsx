@@ -15,14 +15,11 @@ const Login = () => {
         if (!username || !password) {
             return setError("Empty Field")
         }
-
         const isLogin = login(username, password);
         if (isLogin) {
             navigate("/list")
-            setError("true")
         } else {
-            setError("false")
-
+            setError("Something Wrong")
         }
 
     }
